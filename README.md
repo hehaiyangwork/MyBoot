@@ -1,4 +1,4 @@
-# MyBoot
+# SpringBoot
 spring boot example
 
 ## 内嵌Tomcat启动
