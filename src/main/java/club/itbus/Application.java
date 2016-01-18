@@ -1,8 +1,10 @@
 package club.itbus;
 
+import club.itbus.mapper.CityMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.Set;
 import java.util.HashSet;
@@ -12,17 +14,25 @@ import java.util.HashSet;
  * @CompoentScan 告知Spring扫描指定的包来初始化Spring Bean，这能够确保我们声明的Bean能够被发现。可填value值(packagePath)，如果不加必须保证所有的程序在一个包中，不然会出现404.
  */
 
-@ComponentScan
-@EnableAutoConfiguration
-public class Application {
+//@ComponentScan
+//@EnableAutoConfiguration
+@SpringBootApplication
+public class Application implements CommandLineRunner {
+
+    @Autowired
+    public CityMapper cityMapper;
 
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(Application.class);
         app.setWebEnvironment(true);
-        app.setShowBanner(true);
 
         Set<Object> set = new HashSet<Object>();
         app.setSources(set);
         app.run(args);
+    }
+
+    @Override
+    public void run(String... args) throws Exception {
+        System.out.println(this.cityMapper.selectCityById(1));
     }
 }
