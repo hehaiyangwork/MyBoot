@@ -1,6 +1,6 @@
 package club.itbus;
 
-import club.itbus.mapper.CityMapper;
+import club.itbus.dao.CityDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -20,7 +20,7 @@ import java.util.HashSet;
 public class Application implements CommandLineRunner {
 
     @Autowired
-    public CityMapper cityMapper;
+    public CityDao cityDao;
 
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(Application.class);
@@ -33,6 +33,6 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println(this.cityMapper.selectCityById(1));
+        System.out.println(this.cityDao.selectCityById(1));
     }
 }

@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <package name="club.itbus.domain"/>
+        <typeAlias alias="City" type="club.itbus.domain.City"/>
     </typeAliases>
     <mappers>
         <mapper resource="mappers/CityMapper.xml"/>

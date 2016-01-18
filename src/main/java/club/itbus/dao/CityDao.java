@@ -1,4 +1,4 @@
-package club.itbus.mapper;
+package club.itbus.dao;
 
 /**
  * Desc:
@@ -12,13 +12,13 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public class CityMapper {
+public class CityDao extends MyBatisDao<City> {
 
     @Autowired
     private SqlSessionTemplate sqlSessionTemplate;
 
     public City selectCityById(long id) {
-        return this.sqlSessionTemplate.selectOne("selectCityById", id);
+        return this.sqlSessionTemplate.selectOne(sqlId("selectCityById"), id);
     }
 
 }
