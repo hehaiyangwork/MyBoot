@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+## mybaits
+spring:
+  datasource:
+    schema: classpath:import.sql
+
+mybatis:
+  mapperLocations: classpath:mappers/*Mapper.xml
+  typeAliasesPackage: cn.hykes.domain
+
+appender:
+  console:
+    type: Console
+    name: console
+    layout:
+      type: PatternLayout
+
+rootLogger:
+  level: info
+  appenderRef:
+    console:
+      ref: console

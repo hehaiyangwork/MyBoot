@@ -1,4 +1,4 @@
-package club.itbus.dao;
+package cn.hykes.dao;
 
 /**
  * Desc:

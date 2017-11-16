@@ -1,6 +1,6 @@
-package club.itbus;
+package cn.hykes;
 
-import club.itbus.dao.CityDao;
+import cn.hykes.dao.CityDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -24,10 +24,7 @@ public class Application implements CommandLineRunner {
 
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(Application.class);
-        app.setWebEnvironment(true);
-
-        Set<Object> set = new HashSet<Object>();
-        app.setSources(set);
+        app.setBanner(new SampleBanner());
         app.run(args);
     }
 

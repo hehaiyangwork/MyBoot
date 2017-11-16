@@ -1,11 +1,11 @@
-package club.itbus.dao;
+package cn.hykes.dao;
 
 /**
  * Desc:
  * author:HeHaiYang
  * Date:16/1/18
  */
-import club.itbus.domain.City;
+import cn.hykes.domain.City;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

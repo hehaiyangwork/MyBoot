@@ -1,4 +1,4 @@
-package club.itbus.domain;
+package cn.hykes.domain;
 
 import java.io.Serializable;
 
