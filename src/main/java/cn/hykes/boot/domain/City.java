@@ -1,4 +1,4 @@
-package cn.hykes.domain;
+package cn.hykes.boot.domain;
 
 import java.io.Serializable;
 

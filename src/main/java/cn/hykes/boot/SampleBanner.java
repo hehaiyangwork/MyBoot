@@ -1,4 +1,4 @@
-package cn.hykes;
+package cn.hykes.boot;
 
 import org.springframework.boot.Banner;
 import org.springframework.core.env.Environment;

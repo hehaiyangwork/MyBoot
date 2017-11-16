@@ -1,4 +1,4 @@
-package cn.hykes;
+package cn.hykes.boot;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;

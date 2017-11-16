@@ -1,4 +1,4 @@
-package cn.hykes.dao;
+package cn.hykes.boot.dao;
 
 /**
  * Desc:

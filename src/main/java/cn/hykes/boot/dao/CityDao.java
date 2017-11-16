@@ -1,11 +1,11 @@
-package cn.hykes.dao;
+package cn.hykes.boot.dao;
 
 /**
  * Desc:
  * author:HeHaiYang
  * Date:16/1/18
  */
-import cn.hykes.domain.City;
+import cn.hykes.boot.domain.City;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

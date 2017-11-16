@@ -1,13 +1,10 @@
-package cn.hykes;
+package cn.hykes.boot;
 
-import cn.hykes.dao.CityDao;
+import cn.hykes.boot.dao.CityDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.Set;
-import java.util.HashSet;
 
 /**
  * @EnableAutoConfiguration 让 Spring Boot 根据应用所声明的依赖来对 Spring 框架进行自动配置
