@@ -22,3 +22,9 @@ rootLogger:
   appenderRef:
     console:
       ref: console
+
+#hbs
+hbs:
+  root: /Users/hehaiyang/GitHub/spring-boot-examples/src/main/resources/statics
+  prefix: ${hbs.root}
+  suffix: .hbs
